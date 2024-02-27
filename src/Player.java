@@ -1,4 +1,8 @@
-
+/**
+ * @author JOSUE GUERRERO
+ * @version 1.0
+ * @since 27/02/2024
+ */
 import java.awt.Color;
 
 public class Player {

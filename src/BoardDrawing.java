@@ -1,4 +1,8 @@
-
+/**
+ * @author JOSUE GUERRERO
+ * @version 1.0
+ * @since 27/02/2024
+ */
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -10,6 +14,10 @@ import javax.swing.JPanel;
 //note: board does not change dynamically 
 //note: board shape and window aesthetics to be set
 //note: unification of colors not done
+/**
+ * 
+ * @author JOSUE GUERRERO
+ */
 public class BoardDrawing extends JPanel {
 
     /**
@@ -25,7 +33,12 @@ public class BoardDrawing extends JPanel {
     BoardScreen bs;
     //ArrayList<Portal> portals;
     //ArrayList<Player> players;
-
+/**
+ * 
+ * @param row de tipo entero
+ * @param col de tipo entero
+ * @param bs tipo BoardScreen
+ */
     public BoardDrawing(int row, int col, BoardScreen bs) {
         this.bs = bs;
 
@@ -64,7 +77,10 @@ public class BoardDrawing extends JPanel {
         }
 
     }
-
+/**
+ * 
+ * @param g tipo graficos
+ */
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;//.create();
@@ -171,7 +187,14 @@ public class BoardDrawing extends JPanel {
         }
 
     }
-
+/**
+ * 
+ * @param g2d tipo graficos
+ * @param pl tipo entero
+ * @param cell tipo cuadrado del telefono movil
+ * @param cellWidth tipo entero
+ * @param cellHeight  tipo entero
+ */
     private void DrawPlayer(Graphics2D g2d, int pl, Rectangle cell, int cellWidth, int cellHeight) {
         //only one player considered here
 
@@ -187,6 +210,12 @@ public class BoardDrawing extends JPanel {
 				player = port.returnEnd();
 		}
 	}
+     */
+    
+    /**
+     * 
+     * @param pnos tipo entero
+     * @return devuleve el mensaje
      */
     public String ensurePlayerPosition(int pnos) {
         String message = "";
@@ -207,6 +236,11 @@ public class BoardDrawing extends JPanel {
 	public void setPlayer(int a){
 		player = a;
 	}
+     */
+    /**
+     * 
+     * @param a tipo entero
+     * @param pnos tipo entero
      */
     public void setPlayer(int a, int pnos) {
         bs.players.get(pnos).incPosition(a);

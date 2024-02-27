@@ -1,4 +1,8 @@
-
+/**
+ * @author JOSUE GUERRERO
+ * @version 1.0
+ * @since 27/02/2024
+ */
 import javax.swing.SwingUtilities;
 
 public class Main {

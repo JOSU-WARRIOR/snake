@@ -1,6 +1,6 @@
 /**
  * @author JOSUE GUERRERO
- * @version 1.0
+ * @version 2.0
  * @since 27/02/2024
  */
 import java.awt.Color;
@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 /**
  * 
  * @author JOSUE GUERRERO
+ * @serial 27022024
  */
 public class BoardDrawing extends JPanel {
 
